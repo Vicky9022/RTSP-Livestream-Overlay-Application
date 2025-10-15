@@ -156,8 +156,13 @@ http://localhost:3000
 ```
 
 ---
+<<<<<<< HEAD
 ![Application Screenshot](frontend/public/screenshot.png)
 ![Application Screenshot](frontend/public/screenshot1.png)
+=======
+![Application Screenshot](livestream-overlay-app/frontend/public/screenshot.png)
+![Application Screenshot](livestream-overlay-app/frontend/public/screenshot1.png)
+>>>>>>> 2a348b70fc2e971425aee0a726d922f952cc436f
 
 
 ## 📁 Project Structure
