@@ -157,7 +157,7 @@ http://localhost:3000
 
 ---
 ![Application Screenshot](frontend/public/screenshot.png)
-![Application Screenshot](docs/screenshots/screenshot1.png)
+![Application Screenshot](frontend/public/screenshot1.png)
 
 
 ## 📁 Project Structure
