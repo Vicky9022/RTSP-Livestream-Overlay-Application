@@ -1,0 +1,99 @@
+.video-player-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper {
+  position: relative;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.overlays-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlays-container > * {
+  pointer-events: all;
+}
+
+@media (max-width: 1024px) {
+  .video-player-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Add these to your existing VideoPlayer.css file */
+
+.loading-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.loading-message p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(220, 38, 38, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.error-message h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.error-message p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.error-message button {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #dc2626;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.error-message button:hover {
+  transform: scale(1.05);
+}
